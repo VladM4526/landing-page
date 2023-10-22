@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lp-header">
+      <a href="#" class="lp-header-logo">IceCream</a>
+
+      <ul class="lp-header-list">
+        <li class="lp-header-list-item"><a class="lp-header-list-item-link" href="#">Home</a></li>
+        <li class="lp-header-list-item"><a class="lp-header-list-item-link" href="#">Menu</a></li>
+        <li class="lp-header-list-item"><a class="lp-header-list-item-link" href="#">What’s new?</a></li>
+        <li class="lp-header-list-item"><a class="lp-header-list-item-link" href="#">Contact</a></li>
+      </ul>
+
+      <svg class="lp-header-account-icon">
+        <use href="./imgs/set-icons.svg#icon-account"></use>
+      </svg>
+    </div>
+
+    <div class="lp-main-section">
+      <div class="lp-main-container">
+        <h1 class="lp-main-title">Do you like ice cream?</h1>
+        <p class="lp-main-description">Lorem ipsum dolor sit amet consectetur. Diam tempus
+        ut elit est aliquam. Cras cras varius sollicitudin egestas
+        urna scelerisque in. Sagittis cursus sagittis non
+        malesuada. Vitae sit pharetra tortor tristique nisi
+        adipiscing.</p>
+        <div class="lp-learn-container">
+          <button class="lp-learn-button">Learn more</button>
+          <ul class="lp-learn-icons-list">
+            <li class="lp-learn-icons-list-item">
+              <svg class="lp-learn-icons-list-item-icon">
+                <use href="./imgs/set-icons.svg#icon-youtube"></use>
+              </svg>
+            </li>
+            <li class="lp-learn-icons-list-item">
+              <svg class="lp-learn-icons-list-item-icon">
+                <use href="./imgs/set-icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="lp-learn-icons-list-item">
+              <svg class="lp-learn-icons-list-item-icon">
+                <use href="./imgs/set-icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lp-swicher-ice-cream-container">
+        <div class="lp-swicher-titles-imgs-container">
+          <span class="lp-swicher-ice-cream-background"></span>
+          <img src="./imgs/slide-1-edited.jpg" alt="Frozen-Yogurt" class="lp-swicher-ice-cream-img"> 
+        </div>
+
+        <div class="lp-swichers-container">
+          <ul class="lp-swichers-list">
+            <li class="lp-swichers-list-item">
+              <button class="lp-swicher-button-frozen-yogurt" onclick="changeImage('./imgs/slide-1-edited.jpg'), changeBgColor('#BE85A9')">Frozen Yogurt</button>
+            </li>
+            <li class="lp-swichers-list-item">
+              <button class="lp-swicher-button-chocolate" onclick="changeImage('./imgs/slide-2-edited.jpg'), changeBgColor('#773D00')">Сhocolate</button>
+            </li>
+            <li class="lp-swichers-list-item">
+              <button class="lp-swicher-button-strawberry" onclick="changeImage('./imgs/slide-3-edited.jpg'), changeBgColor('#EF4535')">Strawberry</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./script/swicher.js"></script>
+</body>
+</html>
